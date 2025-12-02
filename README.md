@@ -1,1 +1,1 @@
-# WELCOME TO BASH
+# Welcome to my Devops journey!
