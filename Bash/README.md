@@ -44,11 +44,25 @@ Example:
 
 This ensures your script always runs using Bash, no matter what your default shell is.
 
-# 🔑 Key learning points in Bash:
+<h1 align="center"> 🔑 Key Points taken from Bash </h1>
 
-## Comments
+## Comment
 
-Comments in Bash are ignored by the interpreter and used to explain the purpose of commands or sections of a script. They start with the # symbol and help make scripts easier to read and maintain. Comments can be placed on their own line or at the end of a command.
+Comments in Bash are used to explain what a script or a specific line of code does. They are ignored by the interpreter and serve only as notes for anyone reading the script, making it easier to understand, maintain, and review. Comments can be placed on their own line or at the end of a command.
+
+* Begin with the # symbol
+* Ignored by Bash during execution
+* Useful for documenting scripts
+* Can appear on a new line or inline
+* Improve readability for future editing
+
+```bash
+#!/bin/bash
+
+# This prints a greeting to the screen
+echo "Hello, world"  # Inline comment explaining the command
+```
+
 
 ## Parameters
 
@@ -68,9 +82,6 @@ echo "Second argument: $2"
 echo "All arguments: $@"
 echo "Total arguments: $#"
  ```
-
-
-
 ## Piping
 
 Piping allows you to connect commands so that the output of one command becomes the input of another. This makes it possible to build powerful command chains without creating temporary files. It’s commonly used for filtering, transforming, and processing text or data efficiently.
