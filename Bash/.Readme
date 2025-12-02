@@ -1,0 +1,8 @@
+What is Bash?
+
+Bash stands for the "Bourne-again Shell". It is one of several coding languages that we use to program and automoate mundane tasks. Other languages include python, Go and Javascript. Like all of the other programming languages, Bash leverages the computer's basic logic, such as the ability to loop, assign one value to another, and even understand different data types, with strings, numbers and booleans coming to mind. The sytnax of Bash is based on the language of the Linux Operating System. I'll spend the next part of this topic breaking this down in detail.
+
+The Shebang Line
+
+The first component of our Bash script. Arguably the most important. This line tells our local machine how to interpret the the code in the file. It's one line in our script that looks like this:
+
