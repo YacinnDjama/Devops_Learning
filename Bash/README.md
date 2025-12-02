@@ -1,4 +1,9 @@
-# Welcome to the Bash Scripting section of this repository.
+<h1 align="center">Welcome to Bash Scriping!</h1>
+
+
+
+
+
 
 ## 📌 What Is Bash?
 
@@ -38,7 +43,6 @@ Example:
 #!/bin/bash
 
 This ensures your script always runs using Bash, no matter what your default shell is.
-
 
 # 🔑 Key learning points in Bash:
 
