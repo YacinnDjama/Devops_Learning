@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Timestamp for log file
+timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+logfile="system_report_${timestamp}.log"
+
+{
+    echo "===== System Monitor Report ($timestamp) ====="
+    echo
+
+    # CPU Usage
+    echo "CPU Usage:"
+    top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4 "%"}'
+    echo
+
+    # Memory Usage
+    echo "Memory Usage (Total / Used / Free):"
+    free -h | awk '/Mem:/ {print "Total: "$2"  Used: "$3"  Free: "$4}'
+    echo
+
+    # Disk Usage
+    echo "Disk Usage:"
+    df -h --total | awk '/total/ {print "Total: "$2"  Used: "$3"  Free: "$4"  Usage: "$5}'
+    echo
+
+    # Top 5 Processes by Memory
+    echo "Top 5 Processes by Memory:"
+    ps aux --sort=-%mem | head -n 6
+    echo
+
+} > "$logfile"
+
+echo "System monitor report saved to: $logfile"
