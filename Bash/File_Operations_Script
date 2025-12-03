@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Create directory
+mkdir -p bash_demo
+echo "Directory 'bash_demo' created."
+
+# Navigate into the directory
+cd bash_demo || exit
+
+# Create file
+touch demo.txt
+echo "File 'demo.txt' created."
+
+# Write text into the file
+echo "This file was created by a Bash script on 03/12/2025" > demo.txt
+
+# Display the file contents
+echo "File contents: $(cat demo.txt)"
