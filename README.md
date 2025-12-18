@@ -1,6 +1,6 @@
 <h1 align="center"> 🚀 Welcome to My DevOps Journey Repository</h1>
 
-Welcome to my repository about my DevOps journey! Here, I’m documenting everything I learn and create along the way, from Linux basics to advanced CI/CD pipelines.
+Welcome to my repository about my DevOps journey! Here, I’m documenting everything I learn and create along the way, from Linux basics to advanced CI/CD pipelines and kubernetes.
 
 I’ll be sharing projects, scripts, and practical examples that reflect my growth in DevOps. Hope you enjoy reading my repo and find it useful!
 
